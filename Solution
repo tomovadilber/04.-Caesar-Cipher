@@ -1,0 +1,35 @@
+using System;
+using System.Linq;
+using System.Numerics;
+using System.Text;
+using System.Collections.Generic;
+using System.Collections;
+
+
+namespace AssociativeArrays
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            string text = Console.ReadLine();
+
+            StringBuilder result = new StringBuilder();
+
+            for (int i = 0; i < text.Length; i++)
+            {
+                //result.Append((char)(text[i])*3);
+
+                char letter = text[i];
+                letter += (char)3; 
+                Console.Write(letter);
+            }
+
+
+
+            
+        }
+    }
+}
